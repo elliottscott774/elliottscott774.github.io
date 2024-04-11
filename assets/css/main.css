@@ -1944,6 +1944,7 @@ input, select, textarea {
 	.button {
 		position: relative;
 		display: inline-block;
+		margin-top: 1em;
 		border-radius: 0.35em;
 		color: #fff !important;
 		text-decoration: none;
@@ -1982,6 +1983,7 @@ input, select, textarea {
 	.item {
 		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
 		margin-bottom: 40px;
+		text-align: center;
 	}
 
 		.item header {
@@ -1992,8 +1994,17 @@ input, select, textarea {
 		}
 
 			.item header h3 {
-				font-size: 1em;
+				font-size: 2em; /* Increase the font size */
+    			font-weight: bold; /* Make the title bold */
+    			color: #666; /* Existing color, keep or change as needed */
+    			line-height: 1.5em; /* Existing line height, keep or change as needed */
 			}
+		
+		.item p {
+			margin: 0 auto; /* Center the paragraph */
+			max-width: 80%; /* Match the width to the title */
+			color: #888; /* Existing color, keep or change as needed */
+		}
 
 /* Icons */
 
@@ -2122,6 +2133,8 @@ input, select, textarea {
 			position: absolute;
 			left: 0;
 			top: 0;
+			max-width: 100%; 
+    		height: auto;
 		}
 
 	#nav ul {
