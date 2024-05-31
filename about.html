@@ -30,7 +30,7 @@
             font-size: 16px;
             text-decoration: none;
             text-transform: uppercase;
-            margin: 0 5px;
+            margin: 5px;
             border: 1px solid #6AB04C;
             padding: 5px 10px;
             border-radius: 5px;
@@ -38,26 +38,29 @@
         header ul {
             padding: 0;
             list-style: none;
-            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         header li {
-            display: inline;
+            margin: 5px;
         }
         header #branding {
-            float: left;
+            text-align: center;
+            margin-bottom: 20px;
         }
         header #branding h1 {
             margin: 0;
         }
-        section#about {
+        section {
             padding: 20px;
-            background: #3B3A4A;
-        }
-        .dark {
             background: #1F1B24;
             color: #E0E0E0;
-            padding: 20px;
             margin: 20px 0;
+            text-align: left;
+        }
+        section#about {
+            background: #3B3A4A;
         }
         footer {
             padding: 20px;
@@ -89,20 +92,22 @@
         </div>
     </header>
 
-    <section id="about" class="dark">
+    <section id="about">
         <div class="container">
             <h2>About Me</h2>
             <p>My name is Elliott Scott, and I am a Data Scientist with a passion for sports analytics. Originally from Baltimore, MD, I am currently a graduate student at IUPUI studying Applied Data Science with a specialization in Sports Analytics. My passions lie in uncovering insights through the intersection of sports and statistics.</p>
         </div>
     </section>
 
-    <section id="contact" class="container">
-        <h2>Contact Information</h2>
-        <p>Email: ElliottScott774@gmail.com</p>
-        <p>Phone: 443-686-2059</p>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Information</h2>
+            <p>Email: ElliottScott774@gmail.com</p>
+            <p>Phone: 443-686-2059</p>
+        </div>
     </section>
 
-    <section id="experience" class="dark">
+    <section id="experience">
         <div class="container">
             <h2>Work Experience</h2>
             <h3>Data Science Consultant – Booz Allen Hamilton (2021 – 2023)</h3>
@@ -121,15 +126,17 @@
         </div>
     </section>
 
-    <section id="education" class="container">
-        <h2>Education</h2>
-        <ul>
-            <li>Current graduate student at Indiana University Purdue University Indianapolis, studying Applied Data Science, specializing in Sports Analytics, graduating Spring 2025</li>
-            <li>Towson University - Bachelor of Science in Computer Science, December 2020</li>
-        </ul>
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <ul>
+                <li>Current graduate student at Indiana University Purdue University Indianapolis, studying Applied Data Science, specializing in Sports Analytics, graduating Spring 2025</li>
+                <li>Towson University - Bachelor of Science in Computer Science, December 2020</li>
+            </ul>
+        </div>
     </section>
 
-    <section id="skills" class="dark">
+    <section id="skills">
         <div class="container">
             <h2>Technical Skills</h2>
             <ul>
@@ -141,15 +148,17 @@
         </div>
     </section>
 
-    <section id="certificates" class="container">
-        <h2>Certificates / Clearance</h2>
-        <ul>
-            <li>Top Secret Security Clearance (Expired)</li>
-            <li>Machine Learning by Stanford Data Science</li>
-        </ul>
+    <section id="certificates">
+        <div class="container">
+            <h2>Certificates / Clearance</h2>
+            <ul>
+                <li>Top Secret Security Clearance (Expired)</li>
+                <li>Machine Learning by Stanford Data Science</li>
+            </ul>
+        </div>
     </section>
 
-    <section id="interests" class="dark">
+    <section id="interests">
         <div class="container">
             <h2>Other Interests</h2>
             <ul>
