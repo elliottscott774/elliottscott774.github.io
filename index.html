@@ -1,18 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Data Science Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #E0E0E0;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            text-align: center;
+        }
+        header {
+            background: #1F1B24;
+            color: #E0E0E0;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #6AB04C 3px solid;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+        }
+        nav li {
+            display: inline;
+        }
+        nav a {
+            color: #E0E0E0;
+            font-size: 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin: 0 10px;
+            border: 1px solid #6AB04C;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #E0E0E0;
+            background-color: #1F1B24;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Elliott Scott's Data Science Portfolio</h1>
-    <p>Welcome to my portfolio! Here, you'll find my collection of projects that highlight my skills in data analysis, machine learning, and data visualization.</p>
+    <header>
+        <div class="container">
+            <h1>Welcome to Elliott Scott's Data Science Portfolio</h1>
+        </div>
+    </header>
+    <div class="container">
+        <p>Welcome to my portfolio! Here, you'll find my collection of projects that highlight my skills in data analysis, machine learning, and data visualization.</p>
+    </div>
     <nav>
         <ul>
-            <li>
-                <a href="projects.html">Projects</a> |
-                <a href="about.html">About Me</a> 
-            </li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About Me</a></li>
         </ul>
     </nav>
     <footer>

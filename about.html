@@ -1,58 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #E0E0E0;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #1F1B24;
+            color: #E0E0E0;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #6AB04C 3px solid;
+        }
+        header a {
+            color: #E0E0E0;
+            font-size: 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin: 0 5px;
+            border: 1px solid #6AB04C;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        header li {
+            display: inline;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        section#about {
+            padding: 20px;
+            background: #3B3A4A;
+        }
+        .dark {
+            background: #1F1B24;
+            color: #E0E0E0;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #E0E0E0;
+            background-color: #1F1B24;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>About Me</h1>
-    <p>My name is Elliott Scott, and I am a Data Scientist with a passion for sports analytics. Originally from Baltimore, MD, I am currently a graduate student at IUPUI studying Applied Data Science with a specialization in Sports Analytics. My passions lie in uncovering insights through the intersection of sports and statistics.</p>    
-    <h2>Contact Information</h2>
-    <p>Email: ElliottScott774@gmail.com</p>
-    <p>Phone: 443-686-2059</p>
-    
-    <h2>Work Experience</h2>
-    <h3>Data Science Consultant – Booz Allen Hamilton (2021 – 2023)</h3>
-    <ul>
-        <li>Developed a networking data processing system for a genetics machine learning algorithm in Python.</li>
-        <li>Presented monthly research findings to contract stakeholders.</li>
-        <li>Procurement specialist responsible for helping find and track the team’s procurement needs.</li>
-        <li>Responsible for collecting, editing, and maintaining the daily, weekly, and monthly progress reports for contract.</li>
-    </ul>
-    <h3>Intern - Nuclear Biological Chemical Battlefield Integration Laboratory, Aberdeen Proving Ground, MD (Summer of 2018 and 2019)</h3>
-    <ul>
-        <li>Programmed electric drone battery prediction system, included a data parsing and processing system, PCA analysis, and linear regression modeling.</li>
-        <li>Created and executed performance testing for developmental radio equipment. Created analysis report using Wireshark data and charts.</li>
-        <li>Created custom 3D printed drone part schematics using SolidWorks and OpenSCAD.</li>
-    </ul>
-    
-    <h2>Education</h2>
-    <ul>
-        <li>Current graduate student at Indiana University Purdue University Indianapolis, studying Applied Data Science, specializing in Sports Analytics, graduating Spring 2025</li>
-        <li>Towson University - Bachelor of Science in Computer Science, December 2020</li>
-    </ul>
-    <h2>Technical Skills</h2>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Elliott Scott</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#contact">Contact Information</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#interests">Interests</a></li>
+                    <li><a href="index.html">Back to Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="dark">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>My name is Elliott Scott, and I am a Data Scientist with a passion for sports analytics. Originally from Baltimore, MD, I am currently a graduate student at IUPUI studying Applied Data Science with a specialization in Sports Analytics. My passions lie in uncovering insights through the intersection of sports and statistics.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Information</h2>
+        <p>Email: ElliottScott774@gmail.com</p>
+        <p>Phone: 443-686-2059</p>
+    </section>
+
+    <section id="experience" class="dark">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <h3>Data Science Consultant – Booz Allen Hamilton (2021 – 2023)</h3>
+            <ul>
+                <li>Developed a networking data processing system for a genetics machine learning algorithm in Python.</li>
+                <li>Presented monthly research findings to contract stakeholders.</li>
+                <li>Procurement specialist responsible for helping find and track the team’s procurement needs.</li>
+                <li>Responsible for collecting, editing, and maintaining the daily, weekly, and monthly progress reports for contract.</li>
+            </ul>
+            <h3>Intern - Nuclear Biological Chemical Battlefield Integration Laboratory, Aberdeen Proving Ground, MD (Summer of 2018 and 2019)</h3>
+            <ul>
+                <li>Programmed electric drone battery prediction system, included a data parsing and processing system, PCA analysis, and linear regression modeling.</li>
+                <li>Created and executed performance testing for developmental radio equipment. Created analysis report using Wireshark data and charts.</li>
+                <li>Created custom 3D printed drone part schematics using SolidWorks and OpenSCAD.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education" class="container">
+        <h2>Education</h2>
         <ul>
-            <li>Programming Languages: Proficient in Python, R</li>
-            <li>Data Analysis & Visualization Tools: Experienced with Pandas, Numpy, Matplotlib, Seaborn, ggplot2, tidyverse</li>
-            <li>Machine Learning: Skilled in applying Decision Tree Regressors and Logistic Regression models for predictive modeling and data insights</li>
-            <li>Software Development Tools: Experienced with Git for version control, Jupyter Notebooks for interactive coding, and R Markdown for dynamic report generation</li>
+            <li>Current graduate student at Indiana University Purdue University Indianapolis, studying Applied Data Science, specializing in Sports Analytics, graduating Spring 2025</li>
+            <li>Towson University - Bachelor of Science in Computer Science, December 2020</li>
         </ul>
-    
-    <h2>Certificates / Clearance</h2>
-    <ul>
-        <li>Top Secret Security Clearance (Expired)</li>
-        <li>Machine Learning by Stanford Data Science</li>
-    </ul>
-    
-    <h2>Other Interests</h2>
-    <ul>
-        <li>Former Head coach of Susquehanna Football Club.</li>
-        <li>Circumnavigated Bermuda via Sailboat.</li>
-    </ul>
-    
-    <!-- Link to your resume PDF -->
-    <p>Check out my <a href="Resume.pdf" target="_blank">resume</a> for more details.</p>
-    <a href="index.html">Back to Home</a>
+    </section>
+
+    <section id="skills" class="dark">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Programming Languages: Proficient in Python, R</li>
+                <li>Data Analysis & Visualization Tools: Experienced with Pandas, Numpy, Matplotlib, Seaborn, ggplot2, tidyverse</li>
+                <li>Machine Learning: Skilled in applying Decision Tree Regressors and Logistic Regression models for predictive modeling and data insights</li>
+                <li>Software Development Tools: Experienced with Git for version control, Jupyter Notebooks for interactive coding, and R Markdown for dynamic report generation</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="certificates" class="container">
+        <h2>Certificates / Clearance</h2>
+        <ul>
+            <li>Top Secret Security Clearance (Expired)</li>
+            <li>Machine Learning by Stanford Data Science</li>
+        </ul>
+    </section>
+
+    <section id="interests" class="dark">
+        <div class="container">
+            <h2>Other Interests</h2>
+            <ul>
+                <li>Former Head coach of Susquehanna Football Club.</li>
+                <li>Circumnavigated Bermuda via Sailboat.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>Check out my <a href="Resume.pdf" target="_blank">resume</a> for more details.</p>
+        <p>Contact me at: ElliottScott774@gmail.com | 443-686-2059 | Baltimore, MD</p>
+    </footer>
 </body>
 </html>
